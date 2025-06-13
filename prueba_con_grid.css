@@ -6,7 +6,7 @@ body{
 
 .container{
     display: grid;
-    grid-template-columns: 1fr 250px;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 80px 50px auto 60px;
     grid-template-areas: 
     "header header"
@@ -30,6 +30,7 @@ body{
     grid-area: nav;
     background-color: #f2c994;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly ;
     align-items: center;
     gap: 10px;
@@ -51,83 +52,41 @@ body{
 }
 
 .item3 {
+    grid-area: main;
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
     margin-top: 40px;
     box-shadow: 0 0 10px black;
-    padding: 50px;
+    padding: 40px;
 }
 
-.imagen-bmw{
-    width: 370px;
-    height: 270px; 
-    object-fit: cover;
-}
-
-.BMW-container{
-    transition: 0.3s;
-}
-.BMW-container:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
-.imagen-audi{
-    width: 370px;
-    height: 270px; 
-    object-fit: cover;
-}
-
-.Audi-container{
-    transition: 0.3s;
-}
-.Audi-container:hover{
-    transform: scale(1.1);
-    cursor: pointer;
-}
-
+.imagen-bmw,
+.imagen-audi,
 .imagen-mercedes{
     width: 370px;
     height: 270px; 
     object-fit: cover;
 }
 
+.BMW-container,
+.Audi-container,
 .Mercedes-container{
     transition: 0.3s;
-    cursor: pointer;
+    text-align: center;
+    max-width: 370px;
+    width: 90%;
 }
+
+.BMW-container:hover,
+.Audi-container:hover,
 .Mercedes-container:hover{
     transform: scale(1.1);
+    cursor: pointer;
 }
 
-.BMW-container{
-    text-align: center;
-    width: 370px;
-}
-
-.BMW-texto{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.Audi-container{
-    text-align: center;
-    width: 370px;
-}
-
-.Audi-texto{
-    font-size: 18px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.Mercedes-container{
-    text-align: center;
-    width: 370px;
-}
-
+.BMW-texto,
+.Audi-texto,
 .Mercedes-texto{
     font-size: 18px;
     font-weight: bold;
