@@ -42,7 +42,7 @@ body{
     border-radius: 5px;
     border: 3px ridge;
     padding: 10px 20px;
-    cursor: not-allowed;
+    cursor: pointer;
 }
 
 .item2 button:hover{
