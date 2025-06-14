@@ -164,8 +164,8 @@ body{
 
 .TestDrive-container {
     width: 100%;
-    max-width: 600px;
-    margin: 40px auto;
+    max-width: 100%;
+    margin: auto auto;
     padding: 20px;
     background-color: #f2c994;
     border-radius: 10px;
