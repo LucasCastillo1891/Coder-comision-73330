@@ -26,27 +26,31 @@ body{
     justify-content: center;
 }
 
-.item2{
+.item2 {
     grid-area: nav;
     background-color: #f2c994;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly ;
+    justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 10px; 
+    padding: 10px;
 }
 
-.item2 button{
+.item2 a.nav-btn {
     background-color: antiquewhite;
     color: #93521a;
     border-radius: 5px;
     border: 3px ridge;
     padding: 10px 20px;
-    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    flex: 1 1 150px;
+    text-align: center;
 }
 
-.item2 button:hover{
+.item2 a.nav-btn:hover {
     background-color: #4b2c28;
     color: #f2c994;
 }
@@ -231,4 +235,17 @@ body{
 .servicios:hover {
   transform: translateY(-6px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.servicios h3 {
+  color: #93521a;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.servicios p {
+  text-align: center;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #444;
 }
