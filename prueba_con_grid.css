@@ -128,7 +128,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: 15px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 .formulario-contacto input,
@@ -151,4 +151,47 @@ body{
 
 .formulario-contacto button:hover {
     background-color: #4b2c28;
+}
+
+.subtitulo{
+    font-size: 32px;
+    text-decoration: underline;
+}
+
+.texto{
+    text-align: center;
+}
+
+/* Color personalizado para el header y footer */
+.bg-marron {
+  background-color: #93521a;
+}
+
+/* Hover del botón */
+.boton-envio {
+  background-color: #93521a;
+  border: none;
+}
+
+.boton-envio:hover {
+  background-color: #4b2c28 !important;
+}
+
+/* Inputs con focus */
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #93521a;
+  box-shadow: 0 0 0 0.2rem rgba(147, 82, 26, 0.25);
+}
+
+/* Redes sociales animadas */
+.social a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s;
+}
+
+.social a:hover {
+  transform: scale(1.2);
 }
